@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  display: grid;
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: black;
+  border-radius: 10px;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px repeat(5, 1fr);
+}
+
+.part { background-color: yellow; 
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1);
+}
+#display { grid-column: 1 / -1; 
+    font-size: 30px;
+background-color: grey;
+padding:10px;
+overflow: hidden;
+color: white;}
+#zero { grid-column: span 2; }
+#equal{ grid-row: span 2; }
+#clear { grid-column: span 2; }
+#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero{
+    background-color: wheat;
+}
+#dot{
+    background-color: rgb(198, 194, 194);
+}
